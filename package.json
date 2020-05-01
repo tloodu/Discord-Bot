@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot which was created to add some fun to Discord Servers. It includes simple commands which will make some processes easier to perform. However, the intention is to continue to add to this bot and implement more advanced features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tloodu/Discord-Bot.git"
+  },
+  "author": "Taj Loodu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tloodu/Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/tloodu/Discord-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
