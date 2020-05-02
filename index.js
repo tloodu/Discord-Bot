@@ -8,13 +8,16 @@ client.once('ready', () => {
 
 client.on('message', message => {
 
+    if(message.member.hasPermission(['KICK_MEMBERS', 'BAN_MEMBERS'])) {
 
-    if(message.content.startsWith(`${prefix}kick`)){
+    
+            if(message.content.startsWith(`${prefix}kick`)){
 
-        let member = message.mentions.members.first();
-        member.kick().then((member) => {
-            message.channel.send(":eggplant: " + member.displayName + " has been ejected!")
-        })
+            let member = message.mentions.members.first();
+            member.kick().then((member) => {
+                message.channel.send(":eggplant: " + member.displayName + " has been ejected!")
+            })
+        }
     }
 })
 
