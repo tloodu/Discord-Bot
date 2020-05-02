@@ -7,10 +7,14 @@ client.once('ready', () => {
 })
 
 client.on('message', message => {
-    //console.log(message.content);
 
-    if(message.content.startsWith(`${prefix}hello`)){
-        message.channel.send("Hello my love")
+
+    if(message.content.startsWith(`${prefix}kick`)){
+
+        let member = message.mentions.members.first();
+        member.kick().then((member) => {
+            message.channel.send(":eggplant: " + member.displayName + " has been ejected!")
+        })
     }
 })
 
