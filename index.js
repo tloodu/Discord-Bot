@@ -6,4 +6,12 @@ client.once('ready', () => {
     console.log('Ready!')
 })
 
+client.on('message', message => {
+    //console.log(message.content);
+
+    if(message.content.startsWith(`${prefix}hello`)){
+        message.channel.send("Hello my love")
+    }
+})
+
 client.login(token);
