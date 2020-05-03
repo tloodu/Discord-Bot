@@ -19,6 +19,10 @@ client.on('message', message => {
             })
         }
     }
+
+    if(message.content.startsWith(`${prefix}hello`)){
+        message.channel.send("Hello my love, :heart_eyes: ")
+    }
 })
 
 client.login(token);
