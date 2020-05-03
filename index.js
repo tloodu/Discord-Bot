@@ -20,7 +20,7 @@ client.on('message', message => {
         }
     }
 
-    if(message.content === "hello" || "hi"){
+    if(message.content === "hello"){
         message.reply("Greetings my love :heart_eyes: ");
     }
 })
