@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 client.once('ready', () => {
     console.log('Ready!')
-    client.user.setActivity('Fork Knife')
+    client.user.setActivity('Fork Knife', {type: "LISTENING"})
 })
 
 client.on('message', message => {
